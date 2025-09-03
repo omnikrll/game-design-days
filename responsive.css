@@ -1,0 +1,63 @@
+@media (min-width: 768px) {
+  body {  
+    /* background-image: url(https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/bg_clouds%20crop%202.jpg?v=1730843527355);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%; */
+  }
+  
+  header h1 {
+    font-size: 5em;
+  }
+  
+  ul.days {
+    font-size: 1.5em;
+  }
+  
+  ul.days li {
+    width: 120px;
+    height: 120px;
+    text-align: center;
+/*     line-height: 120px; */
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  ul.days li:last-child {
+    width: 120px;
+    margin-top: unset;
+    order: -1;
+  }
+  
+  #events section img {
+    max-width: 45%;
+    float: left;
+    margin: 0 1.5em 1em 0;
+  }
+  
+  .outer {
+    /* background-image: url(https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/bg_city.png?v=1730733948720);
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-position: bottom;
+    background-size: 100%; */
+    width: 100vw;
+    min-height: 1500px;
+    position: relative;
+  }
+  
+  footer {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+/* @media (min-width: 992px) {
+  
+}
+
+@media (min-width: 1200px) {
+  
+} */

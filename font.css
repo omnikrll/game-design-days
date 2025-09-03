@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "GDD";
+  src:
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/GDDCopyFont.otf?v=1729541169655") format("opentype"),
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/GDDCopyFont.ttf?v=1729541646642") format("truetype"),
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/GDDCopyFont.woff?v=1729541650945") format("woff"),
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/GDDCopyFont.eot?v=1729541654605") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: bold;
+  src:
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/Gotham-Bold.otf?v=1729547539405") format("opentype"),
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/Gotham-Bold.ttf?v=1729547675093") format("truetype"),
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/Gotham-Bold.woff?v=1729547674974") format("woff"),
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/Gotham-Bold.eot?v=1729547674806") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: normal;
+  src:
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/Gotham-Book.otf?v=1729547524151") format("opentype"),
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/Gotham-Book.ttf?v=1729547834241") format("truetype"),
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/Gotham-Book.woff?v=1729547834063") format("woff"),
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/Gotham-Book.eot?v=1729547833906") format("embedded-opentype");
+}
+
+@font-face {
+  font-family: "Gotham";
+  font-weight: light;
+  src:
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/Gotham-Light.otf?v=1729547533697") format("opentype"),
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/Gotham-Light.ttf?v=1729547998154") format("truetype"),
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/Gotham-Light.woff?v=1729547997930") format("woff"),
+    url("https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/Gotham-Light.eot?v=1729547997809") format("embedded-opentype");
+}
