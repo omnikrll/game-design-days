@@ -1,0 +1,6 @@
+- Background image(s)
+  - if parallax: fixed-position full-length background image, plus separate scrolling bg elements
+- Hero image
+  - can just be a banner
+
+color palette, fonts, etc.

@@ -14,65 +14,85 @@
 
     <!-- The website JavaScript file -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<!--     <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script> -->
+    <script src="jquery.paroller.min.js"></script>
   </head>
   <body id="index">
-    <!--
-      The body includes the content you see in the page
-      Each element is defined using tags, like this <div></div>
-      The attributes like class="wrapper" let us style elements in the CSS
-    -->
     <div class="outer">
       <div class="wrapper">
         <header>
-          <h1>Game Design Days</h1>
+          <div class="img-holder">
+            <img src="/static/NYU Game Days_FINAL_V2 1200px.png" alt="Game Design Days 2025"/>
+          </div>
         </header>
+        <div class="parallax-bg left" style="background-image: url('/static/Train FLIP.png')"></div>
         <section class="about">
-          <h2>Header text</h2>
-          <p><strong>Lorem ipsum dolor sit amet,</strong> consectetur adipiscing elit. In ut nisi velit. Mauris blandit arcu ex, a fermentum lorem scelerisque non. In nec nulla scelerisque, tempor nisi et, fermentum velit. Donec accumsan urna in velit scelerisque, non congue libero faucibus. Suspendisse egestas diam id quam dignissim mattis eget a nulla. Sed pretium hendrerit tortor vitae tincidunt.
-            <br/>
-            <strong>Nullam lorem ex, mattis eu dolor ut, dictum pulvinar nibh.</strong> Morbi dictum diam bibendum ipsum vehicula ultricies. Aliquam commodo lorem massa, at dapibus erat faucibus non.
-          </p>
           <p>
-            Participating organizations (in alphabetical order):
-            <br>[list of participants]
+            Game Design Days is a NYU Game Center sponsored event series that highlights the underground independent game development communities of NYC. The goal of the event is to serve NYC game design students and anyone curious about game design, by introducing them to the broader NYC game development scene and giving them opportunities to connect with independent studios, collectives, and spaces. By doing so we also hope to strengthen the network of independent NYC game development professionals. Check out the events list, find something that speaks to you, and dive into learning about the world of local game design!
           </p>
         </section>
-        <div class="img-holder" style="min-height: 1200px;">
-          POSTER GOES HERE
-        </div>
+        <div class="parallax-bg right" style="background-image: url('/static/Buildings and Car FLIP.png')"></div>
+        <div class="parallax-bg left" style="background-image: url('/static/CabinetFLIP.png'); margin-top: 350px;"></div>
         <section class="calendar">
           <h2>
             Calendar
           </h2>
-          <ul class="days">
-            <li class="tuesday"><a href="#tuesday">T<br>11/19</a></li>
-            <li class="wednesday"><a href="#wednesday">W<br>11/20</a></li>
-            <li class="thursday"><a href="#thursday">Th<br>11/21</a></li>
-            <li class="saturday"><a href="#saturday">S<br>11/23</a></li>
-            <li class="all"><a href="#all">all</a></li>
-          </ul>
           <ul class="events">
-            <li class="tuesday"><a href="events.html?q=hexcade">11/19 6:00pm HexCade Pop-Up [GAMES]</a></li>
-            <li class="tuesday"><a href="events.html?q=woodbine">11/19 6:30pm Bring (Or Make) Your Own Game Night: Ancient Game Edition [WORKSHOP]</a></li>
-            <li class="tuesday"><a href="events.html?q=gate-panel">11/19 7:00pm Games Against the Empire Panel [TALK]</a></li>
-            <li class="wednesday"><a href="events.html?q=women-in-games">11/20 6:00pm Cocktails Careers &amp; Conversations [TALK]</a></li>
-            <li class="wednesday"><a href="events.html?q=bumblebear">11/20 6:00pm BumbleBear Open Studio [STUDIO VISIT]</a></li>
-            <li class="wednesday"><a href="events.html?q=barnyardia">11/20 8:00pm Scrapeboard 🛹💥 Family Fun NITE 🌝✨ [GAMES]</a></li>
-            <li class="thursday"><a href="events.html?q=zine-jam">11/21 10:00am Zine Jam [WORKSHOP]</a></li>
-            <li class="thursday"><a href="events.html?q=ttrpg-workshop">11/21 7:00pm TTRPG Writing Workshop [WORKSHOP]</a></li>
-            <li class="thursday"><a href="events.html?q=gate-showcase">11/21 7:00pm Games Against the Empire Showcase [SHOWCASE]</a></li>
-            <li class="saturday"><a href="events.html?q=outdoor-games">11/23 1:00pm Outdoor Games [GAMES]</a></li>
-            <li class="saturday"><a href="events.html?q=no-quarter">11/23 7:00pm No Quarter [SHOWCASE]</a></li>
+            <li>
+              <strong>Wonderville - Game Design Days Launch Party</strong><br>
+              Friday, November 14, 8:30pm
+            </li>
+            <li>
+              <strong>Wonderville - Curator's Tour</strong><br>
+              Saturday, November 15, 2:30pm
+            </li>
+            <li>
+              <strong>1000 Boxes - Live Game Show</strong><br>
+              Saturday, November 15, 8:30pm
+            </li>
+            <li>
+              <strong>Twenty Sided Store - TTRPG Writing Workshop</strong><br>
+              Sunday, November 16, 1:00pm (Panel)<br>
+              Sunday, November 16, 2:30pm (Workshop)
+            </li>
+            <li>
+              <strong>School for Poetic Computation - 100 Games Later Showcase</strong><br>
+              Monday, November 17, 5:00pm<br>
+              Tuesday, November 18, 5:00pm
+            </li>
+            <li>
+              <strong>Boshi's Place - Outdoor Games</strong><br>
+              Tuesday, November 18, 11am - 2pm
+            </li>
+            <li>
+              <strong>Women in Games NYC - Pitch + Plate</strong><br>
+              Wednesday, November 19, 6:00pm
+            </li>
+            <li>
+              <strong>BumbleBear - Open Studio</strong><br>
+              Wednesday, November 19, 6:00pm
+            </li>
+            <li>
+              <strong>Boshi's Place - Creatures of Light: A Show About Angels</strong><br>
+              Thursday, November 20, 7:00pm
+            </li>
+            <li>
+              <strong>Boshi's Place - Game Manual Jam</strong><br>
+              Saturday, November 22, 11:00am
+            </li>
+            <li>
+              <strong>NYU Game Center - No Quarter</strong><br>
+              Saturday, November 22, 7:00pm
+            </li>
           </ul>
         </section>
+        <div class="parallax-bg right" style="background-image: url('/static/Cabinet.png')"></div>
         <section class="map">
           <h2>
             Map
           </h2>
           <div class="img-holder">
-            <a href="https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/map.jpg?v=1730745255133" target="_blank">
-              <img src="https://cdn.glitch.global/e37d6014-576d-4c9f-a772-037c5f5e17b0/map.jpg?v=1730745255133" alt="map">
+            <a href="/static/GD Days 2025 Map v1.png" target="_blank">
+              <img src="/static/GD Days 2025 Map v1.png" alt="map">
             </a>
           </div>
           <p>
@@ -82,6 +102,7 @@
             Art by <a href="https://jaketerrell.net/" target="_blank">Jake Terrell</a>
           </p>
         </section>
+        <div class="parallax-bg left" style="background-image: url('/static/Buildings and Car.png'); margin-top: -120px;"></div>
       </div>
       <footer class="footer">
         <div>
@@ -101,26 +122,6 @@
       </footer>
     </div>
     <script type="text/javascript">
-      $('.days a').click((event) => {
-        event.preventDefault();
-
-        // console.log(event);
-
-        let day = event.target.hash.slice(1);
-
-        console.log(day);
-
-        if (day == 'all') {
-          $('.events li').removeClass('hidden');
-        } else {
-          let selector = 'li.' + day,
-              notSelector = 'li:not(.' + day + ')';
-
-          $('.events ' + selector).removeClass('hidden');
-          $('.events ' + notSelector).addClass('hidden');
-        }
-      });
-      
     </script>
   </body>
 </html>
