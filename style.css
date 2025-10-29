@@ -212,7 +212,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   height: 500px;
-  background-image: url('./static/Cityscape Full.png');
+  background-image: url('static/Cityscape Full.png');
   background-position: bottom -110px center;
   background-size: 40%;
   background-repeat: no-repeat;
