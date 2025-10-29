@@ -2,4 +2,13 @@
   .parallax-bg {
     display: none;
   }
+
+  .event-details {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .event-details .img-holder {
+    width: unset;
+  }
 }

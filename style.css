@@ -135,12 +135,12 @@ section {
 
  .parallax-bg.left {
   background-position: center left;
-  left: -9em;
+  left: -20em;
  }
 
  .parallax-bg.right {
   background-position: center right;
-  right: -9em;
+  right: -20em;
  }
 
 /* #events section {
@@ -249,19 +249,20 @@ footer img {
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   width: calc(100vw - 4em);
-  height: calc(100vh - 2em);
+  height: calc(100vh - 4em);
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
 .lightbox-inner #close-lightbox {
-  display: box;
+  display: block;
   position: absolute;
   top: 0;
   right: 0;
   font-size: 2em;
   text-decoration: none;
   color: black;
+  z-index: 1000;
 }
 
 .lightbox-inner section {
