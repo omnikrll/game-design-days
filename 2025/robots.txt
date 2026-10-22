@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /static/
+Disallow: /2024/assets/
+Disallow: /2025/static/
