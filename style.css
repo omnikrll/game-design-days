@@ -1,6 +1,11 @@
 @import "reset.css";
 @import "font.css";
 
+:root {
+    --skew-angle-pos: 10deg;
+    --skew-angle-neg: -10deg;
+}
+
 body {
     font-family: 'Univers';
 }
@@ -32,7 +37,8 @@ footer {
     position: relative;
     background: #fef5b8;
     padding: 2rem;
-    transform: skew(-10deg, 0deg);
+    /* negative skew angle */
+    transform: skewX(var(--skew-angle-neg));
     margin: 2rem 0;
     transform-style: preserve-3d;
 }
@@ -44,12 +50,14 @@ footer:before {
     width: 100%;
     height: 100%;
     background: rgba(0, 110, 184, 0.57);
-    transform: translate3d(24px, -50px, -1px) rotate(-2deg) skew(-10deg, 0deg) scaleX(90%) scaleY(90%);
+    /* negative skew angle */
+    transform: translate3d(24px, -50px, -1px) rotate(-2deg) skewX(var(--skew-angle-neg)) scaleX(90%) scaleY(90%);
 }
 
 .section-inner {
     text-align: left;
-    transform: skew(10deg, 0deg);
+    /* positive skew angle */
+    transform: skewX(var(--skew-angle-pos));
     width: 80%;
     margin: 0 auto;
     position: relative;
@@ -110,7 +118,9 @@ footer img {
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%) translateY(-50%) skew(-10deg);
+    max-height: calc(100vh - 4em);
+    /* negative skew angle */
+    transform: translateX(-50%) translateY(-50%) skewX(var(--skew-angle-neg));
     max-width: 960px;
     display: flex;
     justify-content: center;
@@ -120,10 +130,13 @@ footer img {
 
 .lightbox-clearfix {
     width: 80%;
+    height: calc(100vh - 6em);
     box-sizing: content-box;
-    transform: skew(10deg);
+    /* positive skew angle */
+    transform: skewX(var(--skew-angle-pos));
     overflow-y: scroll;
     margin: 0 10%;
+    padding-bottom: 2rem;
     scrollbar-width: thin;
     scrollbar-color: rgba(0, 110, 184, 0.57) rgba(0,0,0,0);
 }
@@ -132,20 +145,23 @@ footer img {
     display: block;
     position: absolute;
     top: 0;
-    right: 0;
+    right: 2rem;
     font-size: 2em;
     text-decoration: none;
     color: black;
     z-index: 1000;
+    transform: skewX(var(--skew-angle-pos));
 }
 
 .lightbox-inner section {
     width: unset;
+    height: 80%;
     max-width: unset;
     transform: unset;
     border: none;
-    margin: 0 auto;
+    padding-bottom: 2rem;
 }
+
 .lightbox-inner section:before {
     display: none;
 }
