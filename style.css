@@ -32,6 +32,21 @@ body {
     position: relative;
 }
 
+.poster {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    border: 4px solid black;
+    transform-style:preserve-3d;
+}
+
+.poster:before {
+    position: absolute;
+    content: "";
+    background: rgba(0, 110, 184, 0.57);
+    transform: translate3d(-24px, 50px, -1px) skewX(var(--skew-angle-pos));
+}
+
 section,
 footer {
     position: relative;
@@ -160,6 +175,10 @@ footer img {
     transform: unset;
     border: none;
     padding-bottom: 2rem;
+}
+
+.lightbox-inner section p:last-child {
+    padding: 2rem 0;
 }
 
 .lightbox-inner section:before {
