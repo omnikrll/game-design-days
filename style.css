@@ -15,14 +15,45 @@ body {
 }
 
 .outer {
-    position: fixed;
+    /* position: fixed; */
     width: 100vw;
     height: 100vh;
     background-image: url('./static/img/GDD26_Sidewalk_Track.png');
-    background-size: 80%;
+    background-size: 75%;
     background-repeat: repeat-y;
-    background-position: center;
+    background-position-x: center;
+    background-position-y: 0px;
     overflow-y: scroll;
+}
+
+.between-layer {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    clear: both;
+    padding: 0 8%;
+    pointer-events: none;
+}
+
+.between-layer .spacer {
+    clear: both;
+    height: 300px;
+}
+
+.between-layer img {
+    max-width: 300px;
+    float: left;
+    max-height: 480px;
+}
+
+.between-layer img:nth-of-type(even) {
+    float: right;
+}
+
+.top-layer {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
 }
 
 .wrapper {
@@ -78,6 +109,13 @@ footer:before {
     position: relative;
 }
 
+.section-inner .content-box {
+    border: 1px solid black;
+    padding: .5rem;
+    background: white;
+    box-shadow: -2px 2px 4px black;
+}
+
 .calendar .section-inner {
     width: 90%;
     margin: unset;
@@ -101,6 +139,32 @@ footer:before {
     text-align: right;
     float: right;
 }
+
+.events li a {
+    display: inline-block;
+    background: white;
+    padding: .5rem;
+    border: 1px solid black;
+    box-shadow: -2px 2px 4px black;
+    color: black;
+    text-decoration: none;
+    transition: transform 40ms;
+    transform: scale(1);
+}
+
+.events li:nth-child(even) a {
+    box-shadow: 2px 2px 4px black;
+}
+
+.events li a:hover {
+    transform: scale(1.1);
+}
+
+.events li a:active {
+    transform: scale(0.99);
+}
+
+
 
 footer .section-inner p {
     display: flex;
@@ -153,7 +217,7 @@ footer img {
     margin: 0 10%;
     padding-bottom: 2rem;
     scrollbar-width: thin;
-    scrollbar-color: rgba(0, 110, 184, 0.57) rgba(0,0,0,0);
+    scrollbar-color: rgba(0,0,0,0) rgba(0,0,0,0);
 }
 
 .lightbox-inner #close-lightbox {
@@ -170,15 +234,16 @@ footer img {
 
 .lightbox-inner section {
     width: unset;
-    height: 80%;
     max-width: unset;
     transform: unset;
-    border: none;
-    padding-bottom: 2rem;
+    border: 1px solid black;
+    padding: .5rem;
+    background: white;
+    box-shadow: -2px 2px 4px black;
 }
 
 .lightbox-inner section p:last-child {
-    padding: 2rem 0;
+    padding-top: 2rem;
 }
 
 .lightbox-inner section:before {
