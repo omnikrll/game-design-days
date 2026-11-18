@@ -160,12 +160,6 @@ footer:before {
     transform: scale(1.1);
 }
 
-.events li a:active {
-    transform: scale(0.99);
-}
-
-
-
 footer .section-inner p {
     display: flex;
     align-items: center;
