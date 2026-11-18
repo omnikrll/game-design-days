@@ -252,6 +252,9 @@ footer img {
 
 .lightbox-inner .img-holder {
     width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .lightbox-inner .event-dta {
