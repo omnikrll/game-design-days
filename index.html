@@ -58,6 +58,7 @@
               <h2>
                 Calendar
               </h2>
+              <p>Click on an event to view details.</p>
               <ul class="events">
                 <li>
                   <a href="#e-for-everyone">
@@ -474,15 +475,18 @@
       if (window.location.hash.length > 0) showEvent(window.location.hash);
 
       //parallax stuff
+      const scrollBtwnLayer = window.matchMedia("(width <= 992px)");
+
       function parallax() {
-        let wScroll = $('.outer').scrollTop();
-        $('.parallax--bg').css('background-position-y', `${(wScroll*-0.5)}px`);
-        $('.between-layer').css('top', `${(wScroll*-0.65)}px`);
+        let scrollTop = $('.outer').scrollTop();
+        $('.parallax--bg').css('background-position-y', `${(scrollTop*-0.5)}px`);
+        //don't scroll the middle layer if we're below 992px
+        if (scrollBtwnLayer) $('.between-layer').css('top', `${(scrollTop*-0.65)}px`);
       }
 
-      $('.outer').scroll(function() {
-        parallax();
-      });
+      // const mobileQuery = window.matchMedia("(width <= 786px)");
+      // if (mobileQuery) 
+      $('.outer').scroll(() => { parallax(); });
     </script>
   </body>
 </html>

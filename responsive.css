@@ -5,25 +5,72 @@
 
 /* medium desktop */
 @media (max-width: 1200px) {
+  :root {
+    --skew-angle-pos: 5deg;
+    --skew-angle-neg: -5deg;
+  }
+
+  body,
+  .outer {
+    overflow-x: hidden;
+  }
 
 }
 
 /* small desktop / landscape tablet */
 @media (max-width: 992px) {
+  .poster {
+    width: 90%;
+  }
 
+  section:before,
+  footer:before {
+    transform: translate3d(5px, -32px, -1px) rotate(0deg) skewX(var(--skew-angle-pos)) scaleX(1.1) scaleY(1);
+  }
 }
 
 /* portrait tablet */
 @media (max-width: 768px) {
+  section,
+  footer,
+  .section-inner {
+    transform: unset;
+  }
+
+  .calendar .section-inner {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .events {
+    margin: 0 auto;
+    text-align: center;
+    width: unset;
+  }
+
+  .events li,
+  .events li:nth-child(even) {
+    float: unset;
+    display: inline-block;
+    text-align: left;
+  }
+
+  .events li:nth-child(even) a {
+    box-shadow: -2px 2px 4px black;
+  }
 
 }
 
 /* large phone */
 @media (max-width: 576px) {
-
+  body {
+    font-size: 21px;
+  }
 }
 
 /* small phone */
 @media (max-width: 440px) {
-
+  .between-layer {
+    display: none;
+  }
 }

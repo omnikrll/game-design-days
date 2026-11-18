@@ -71,13 +71,6 @@ body {
     transform-style:preserve-3d;
 }
 
-.poster:before {
-    position: absolute;
-    content: "";
-    background: rgba(0, 110, 184, 0.57);
-    transform: translate3d(-24px, 50px, -1px) skewX(var(--skew-angle-pos));
-}
-
 section,
 footer {
     position: relative;
@@ -97,7 +90,7 @@ footer:before {
     height: 100%;
     background: rgba(0, 110, 184, 0.57);
     /* negative skew angle */
-    transform: translate3d(24px, -50px, -1px) rotate(-2deg) skewX(var(--skew-angle-neg)) scaleX(90%) scaleY(90%);
+    transform: translate3d(24px, -50px, -1px) rotate(-2deg) skewX(var(--skew-angle-neg)) scaleX(0.9) scaleY(0.9);
 }
 
 .section-inner {
