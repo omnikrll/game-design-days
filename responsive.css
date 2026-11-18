@@ -19,6 +19,10 @@
 
 /* small desktop / landscape tablet */
 @media (max-width: 992px) {
+  .between-layer {
+    display: none;
+  }
+
   .poster {
     width: 90%;
   }
@@ -66,11 +70,22 @@
   body {
     font-size: 21px;
   }
+  
+  .lightbox-inner {
+    transform: translateX(-50%) translateY(-50%) skewX(0deg);
+  }
+
+  .lightbox-clearfix {
+    transform: unset;
+  }
+
+  .lightbox-inner #close-lightbox {
+    right: 1%;
+    transform: unset;
+    font-size: 32px;
+  }
 }
 
 /* small phone */
 @media (max-width: 440px) {
-  .between-layer {
-    display: none;
-  }
 }
