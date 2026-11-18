@@ -237,6 +237,10 @@ footer img {
     box-shadow: -2px 2px 4px black;
 }
 
+.lightbox-inner section h2 {
+    margin-bottom: 1rem;
+}
+
 .lightbox-inner section p:last-child {
     padding-top: 2rem;
 }
