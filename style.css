@@ -154,6 +154,10 @@ footer:before {
     transform: scale(1.1);
 }
 
+footer .section-inner {
+    text-align: center;
+}
+
 footer .section-inner p {
     display: flex;
     align-items: center;
