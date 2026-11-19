@@ -493,11 +493,7 @@
 
       // turn parallax on/off for smaller devices, allow window resizing to turn it on and off
       let notMobile = window.matchMedia("(width > 768px)").matches;
-      console.log(notMobile);
-      $(window).on('resize', () => { 
-        notMobile = window.matchMedia("(width > 786px)").matches; 
-        console.log(notMobile);
-      });
+      $(window).on('resize', () => { notMobile = window.matchMedia("(width > 786px)").matches; });
       if (notMobile) $('.outer').scroll(() => { parallax(); });
     </script>
   </body>
