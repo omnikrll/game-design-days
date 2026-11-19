@@ -41,6 +41,11 @@
     transform: unset;
   }
 
+  section:before,
+  footer:before {
+    display: none;
+  }
+
   .calendar .section-inner {
     width: 80%;
     margin: 0 auto;
@@ -54,9 +59,10 @@
 
   .events li,
   .events li:nth-child(even) {
-    float: unset;
+    float: none;
     display: inline-block;
     text-align: left;
+    margin: 2rem;
   }
 
   .events li:nth-child(even) a {

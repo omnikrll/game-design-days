@@ -35,18 +35,22 @@ body {
     pointer-events: none;
 }
 
+.between-layer .parallax-section {
+    height: 60vh;
+}
+
 .between-layer .spacer {
     clear: both;
-    height: 300px;
+    height: 50%;
 }
 
 .between-layer img {
     max-width: 300px;
     float: left;
-    max-height: 480px;
+    max-height: 320px;
 }
 
-.between-layer img:nth-of-type(even) {
+.between-layer .parallax-section:nth-child(even) img {
     float: right;
 }
 
@@ -171,6 +175,28 @@ footer .section-inner p:last-child {
 
 footer img {
     height: 2rem;
+}
+
+.history {
+    margin-top: 2rem;
+    border-top: 1px solid black;
+}
+
+.history p:first-child {
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+.history p:last-child {
+    margin-top: .5rem;
+}
+
+.history a {
+    margin-top: 0;
+    border: 1px solid black;
+    padding: .5rem;
+    background: white;
+    box-shadow: -2px 2px 4px black;
 }
 
 .lightbox-outer {

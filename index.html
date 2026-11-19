@@ -22,14 +22,22 @@
   <body id="index">
     <div class="outer parallax--bg">
       <div class="between-layer">
-        <div class="spacer"></div>
-        <img src="./static/img/incidentals/GDD26_Controller.png"/>
-        <div class="spacer"></div>
-        <img src="./static/img/incidentals/GDD26_Cutting_Board_and_XActo_People.png"/>
-        <div class="spacer"></div>
-        <img src="./static/img/incidentals/GDD26_Notecards.png">
-        <div class="spacer"></div>
-        <img src="./static/img/incidentals/GDD26_Pencil.png"/>
+        <div class="parallax-section">
+          <div class="spacer"></div>
+          <img src="./static/img/incidentals/GDD26_Controller.png"/>
+        </div>
+        <div class="parallax-section">
+          <div class="spacer"></div>
+          <img src="./static/img/incidentals/GDD26_Cutting_Board_and_XActo_People.png"/>
+        </div>
+        <div class="parallax-section">
+          <div class="spacer"></div>
+          <img src="./static/img/incidentals/GDD26_Notecards.png">
+        </div>
+        <div class="parallax-section">
+          <div class="spacer"></div>
+          <img src="./static/img/incidentals/GDD26_Pencil.png"/>
+        </div>
       </div>
       <div class="top-layer">
         <div class="wrapper">
@@ -130,7 +138,7 @@
           <section class="map">
             <div class="section-inner">
               <!-- <h2>Map</h2> -->
-              <div class="content-box">
+              <div class="content-box" style="margin-top: 0;"">
                 <!-- <div class="img-holder">
                   <a href="">
                     <img src="" alt="map">
@@ -157,13 +165,15 @@
                 <a href="https://tisch.nyu.edu" target="_blank"><img src="./static/img/branding/tisch-logo-48px.webp" alt="Tisch logo"/></a>
                 <a href="https://gamecenter.nyu.edu" target="_blank"><img src="./static/img/branding/gc-logo-48px.webp" alt="Game Center logo"/></a>
               </p>
-              <p>
-                Previous years 
-              </p>
-              <p>
-                <a href="./2024/">2024</a>
-                <a href="./2025/">2025</a>
-              </p>
+              <div class="history">
+                <p>
+                  Previous years 
+                </p>
+                <p>
+                  <a href="./2024/">2024</a>
+                  <a href="./2025/">2025</a>
+                </p>
+              </div>
             </div>
           </footer>
         </div>
@@ -483,9 +493,14 @@
         if (scrollBtwnLayer) $('.between-layer').css('top', `${(scrollTop*-0.65)}px`);
       }
 
-      // const mobileQuery = window.matchMedia("(width <= 786px)");
-      // if (mobileQuery) 
-      $('.outer').scroll(() => { parallax(); });
+      // turn parallax on/off for smaller devices, allow window resizing to turn it on and off
+      let notMobile = window.matchMedia("(width > 768px)").matches;
+      console.log(notMobile);
+      $(window).on('resize', () => { 
+        notMobile = window.matchMedia("(width > 786px)").matches; 
+        console.log(notMobile);
+      });
+      if (notMobile) $('.outer').scroll(() => { parallax(); });
     </script>
   </body>
 </html>
